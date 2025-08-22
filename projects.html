@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Portfolio of Kevin Nhu — developer open to Support, Software, and Full-Stack Engineering roles." />
+<title>Kevin Nhu — Portfolio</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="assets/favicon.ico" />
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Kevin Nhu</a>
+    <nav id="nav">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="writing.html">Writing</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex; gap:.5rem; align-items:center;"><button class="menu" aria-label="Toggle menu" onclick="toggleMenu()">☰</button><button class="menu" aria-label="Toggle theme" onclick="toggleTheme()">🌓</button></div>
+  </div>
+</header>
+
+<main id="content" class="container narrow">
+  <h1>Projects</h1>
+    <div class="chips" id="filters">
+      <span class="chip active" data-filter="all">All</span>
+      <span class="chip" data-filter="python">Python</span>
+      <span class="chip" data-filter="java">Java</span>
+      <span class="chip" data-filter="web">Web</span>
+      <span class="chip" data-filter="ai">AI</span>
+    </div>
+  <section class="grid-3 reveal">
+    <article class="card" data-tags="python web ai">
+      <h3>Discord QA Bot (Contribution)</h3>
+      <p>While at USD ITS, I contributed to an internal Discord bot that automated ticket QA and weekly reporting. 
+      My role focused on designing workflows and testing outputs, helping streamline the review process.</p>
+      <ul class="meta"><li>Python</li><li>discord.py</li></ul>
+      <p class="result">Impact: reduced manual review effort by ~30%. Code is internal and not public.</p>
+    </article>
+    <article class="card" data-tags="java">
+      <h3>TaskCLI</h3>
+      <p>Terminal task manager for quick capture with tags and due dates. I built it to keep focus during busy support shifts.</p>
+      <ul class="meta"><li>Java</li><li>JavaFX</li><li>JUnit</li></ul>
+      <p><a class="btn small" href="https://github.com/kevin-nhu" target="_blank" rel="noopener">Code</a></p>
+    </article>
+    <article class="card" data-tags="web">
+      <h3>Mini Web Demos</h3>
+      <p>Assorted little experiments (typing simulator, contrast picker). Not fancy—just useful.</p>
+      <ul class="meta"><li>JS</li><li>HTML/CSS</li></ul>
+      <p><a class="btn small" href="https://knhu.github.io" target="_blank" rel="noopener">Live</a></p>
+    </article>
+    <article class="card" data-tags="python ai web">
+      <h3>AI-Assisted Bug Reproducer (In Progress)</h3>
+      <p>A tool that takes error logs or bug reports and automatically attempts to reproduce the issue in a sandbox environment. 
+      Uses AI to generate reproduction steps and Docker containers for isolation.</p>
+      <ul class="meta"><li>Python</li><li>FastAPI</li><li>Docker</li><li>LLMs</li></ul>
+      <p class="result">Goal: save engineers time by automating one of the hardest parts of debugging. Currently in progress.</p>
+    </article>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Kevin Nhu · <a href="mailto:kevinnhu.kn@gmail.com">Email</a> · 
+    <a href="https://www.linkedin.com/in/kevinnhu" target="_blank" rel="noopener">LinkedIn</a> · 
+    <a href="https://github.com/kevin-nhu" target="_blank" rel="noopener">GitHub</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">Top</button>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Portfolio of Kevin Nhu — developer open to Support, Software, and Full-Stack Engineering roles." />
+<title>Kevin Nhu — Portfolio</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="assets/favicon.ico" />
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Kevin Nhu</a>
+    <nav id="nav">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="writing.html">Writing</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex; gap:.5rem; align-items:center;"><button class="menu" aria-label="Toggle menu" onclick="toggleMenu()">☰</button><button class="menu" aria-label="Toggle theme" onclick="toggleTheme()">🌓</button></div>
+  </div>
+</header>
+
+<main id="content" class="container narrow">
+  <h1>About</h1>
+  <p>I like fixing things and explaining them simply. I’ve worked across teaching, IT, and admissions—different contexts, same pattern: 
+  find the bottleneck, ship something small, and make tomorrow easier than today.</p>
+
+  <p>I’m open to Support Engineer, Software Engineer, and Full-Stack Developer roles, where I can combine problem-solving, communication, and building reliable tools.</p>
+
+  <h2>Principles</h2>
+  <ul>
+    <li><strong>Start small.</strong> One meaningful improvement per week beats a big plan that never ships.</li>
+    <li><strong>Make it obvious.</strong> Docs and UI should answer the next question before it’s asked.</li>
+    <li><strong>Measure it.</strong> If a change helps, the metrics should move.</li>
+  </ul>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Kevin Nhu · <a href="mailto:kevinnhu.kn@gmail.com">Email</a> · 
+    <a href="https://www.linkedin.com/in/kevinnhu" target="_blank" rel="noopener">LinkedIn</a> · 
+    <a href="https://github.com/kevin-nhu" target="_blank" rel="noopener">GitHub</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">Top</button>
+</body>
+</html>

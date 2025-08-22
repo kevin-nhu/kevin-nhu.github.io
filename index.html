@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="Portfolio of Kevin Nhu — developer open to Support, Software, and Full-Stack Engineering roles." />
+<title>Kevin Nhu — Portfolio</title>
+<link rel="stylesheet" href="styles.css" />
+<link rel="icon" href="assets/favicon.ico" />
+
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container nav">
+    <a class="brand" href="index.html">Kevin Nhu</a>
+    <nav id="nav">
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="writing.html">Writing</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div style="display:flex; gap:.5rem; align-items:center;"><button class="menu" aria-label="Toggle menu" onclick="toggleMenu()">☰</button><button class="menu" aria-label="Toggle theme" onclick="toggleTheme()">🌓</button></div>
+  </div>
+</header>
+
+<main id="content" class="container narrow">
+  <section class="hero reveal">
+    <img class="avatar" src="assets/headshot.jpg" alt="Portrait of Kevin Nhu" />
+    <div>
+      <h1>Hi, I'm Kevin.</h1>
+      <p class="sub">I’m a developer with experience in support, automation, and full-stack web projects. 
+      I enjoy building helpful tools, solving user problems, and creating clean web experiences. 
+      I’m open to Support Engineering, Software Engineering, and Full-Stack roles.</p>
+      <div class="cta">
+        <a class="btn" href="projects.html">See my projects</a>
+        <a class="btn secondary" href="about.html">More about me</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section split reveal">
+    <div class="card">
+      <h3>What I do</h3>
+      <ul>
+        <li>Automating repetitive tasks with lightweight tools and scripts.</li>
+        <li>Building small but impactful apps for real users.</li>
+        <li>Improving documentation and processes to reduce friction.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3>Recent wins</h3>
+      <ul>
+        <li>Cut repeat tickets by ~20% through clearer KBs.</li>
+        <li>Helped streamline QA reviews with an internal Discord bot contribution.</li>
+        <li>Taught Python/Java to dozens of students with live debugging demos.</li>
+      </ul>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Kevin Nhu · <a href="mailto:kevinnhu.kn@gmail.com">Email</a> · 
+    <a href="https://www.linkedin.com/in/kevinnhu" target="_blank" rel="noopener">LinkedIn</a> · 
+    <a href="https://github.com/kevin-nhu" target="_blank" rel="noopener">GitHub</a></p>
+  </div>
+</footer>
+<script src="script.js"></script>
+
+<button id="toTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">Top</button>
+</body>
+</html>
